@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Servie in India | MyOnlineMeal.com</title>
+    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet"  media="screen and (max-width:1170px)" href="CSS/phone.css">
+    <style>
+        #navbar{
+            display: flex;
+            align-items: center;
+        }
+        #logo{
+            margin: 10px 10px;
+        }
+        #logo img{
+            height: 90px;
+            margin: 13px 6px;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+            position: sticky;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar ul{
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            
+        }
+        #navbar ul li{
+            
+            list-style: none;
+            font-size: 1.3rem;
+            
+        }
+        #navbar ul li a{
+            
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+            
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            
+        }
+        #home::before{
+            content: "";
+            background :url("bg2.jpg") no-repeat center center/cover;
+            /* background :url("bg1.jpg") no-repeat center center/cover; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;    
+            top: 0px;
+            left: 0px;
+        }
+        #home h1{
+            color: white;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+        }
+        #home p{
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+            
+        }
+        .h-primary{
+            font-size: 2.8rem;
+            padding: 12px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            align-items: center;
+            justify-content: center;
+        }
+        .h-secondary{
+            
+            font-size: 2.3rem;
+            padding: 12px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px ;
+            cursor: pointer;
+        }
+        .center{
+            text-align:center;
+        }
+        #services{
+            margin: 34px;
+            display: flex;
+            /* text-align: center; */
+            
+        }
+        #services .box{
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 2px 25px;
+            border-radius: 28px;
+            background-color: rgb(238, 226, 226);
+            margin-bottom: 20px;
+           
+
+
+        }
+        #services .box img{
+            height: 160px;
+            margin: auto;
+            display: block;
+
+        }
+        /* #services{}
+        .h-primary .centre{
+            text-align: center;
+
+        } */
+        #services .box p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #client-section{
+            position: relative;
+            height: 344px;
+        }
+        #client-section::before{
+            content: "";
+            position: absolute;
+            background: url("bg1.jpg") no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        
+            
+        }
+        #clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #clients img {
+            height: 150px;
+            
+        }
+        .client-item{
+            padding: 34px ;
+        }
+
+        #contact{
+            position: relative;
+        }
+
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('./contact-us.webp') no-repeat center center/cover;
+
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        footer{
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="MyOnlineMeal">
+        </div> 
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+           
+        </ul>
+    </nav>   
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Your Favourite Meal now delivered at your Doorstep in Minutes. </p>
+        <p>KHAO DABAKE PAISE BACHAKE</p>
+       
+        <button class="btn">Order Now</button>
+    </section> 
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div  id="services">
+            <div class="box">
+                <img src="food dil2.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Take your event to the next level with our food catering service. Our experienced chefs will prepare a mouth-watering menu that will impress your guests. From corporate events to weddings, we'll deliver the best quality food to your location, leaving a lasting impression on everyone in attendance.</p>
+            </div>
+            <div class="box">
+                <img src="all food.jpg" alt="">
+                <h2 class="h-secondary center">Party Orders</h2>
+                <p class="center">Whether you're feeding a large group or stocking up for the week, our bulk ordering service has got you covered. Choose from our extensive menu of delicious dishes and enjoy the convenience of having it delivered straight to your door. Perfect for busy families and office lunches..</p>
+            </div>
+            <div class="box">
+                <img src="pizza.jpg" alt="">
+                <h2 class="h-secondary center">     Dining </h2>
+                <p class="center">Enjoy your favorite dishes from the comfort of your own home with our food ordering service. With a wide selection of cuisines to choose from, we've got something to satisfy every craving. Plus, with easy online ordering and quick delivery, satisfying your hunger has never been easier..</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="microsoft ok.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="HP-logo ok.png" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="skype-2048156__340.webp" alt="Our client">
+            </div>
+            <div class="client-item">
+                <img src="apple- good.png"Our client">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" 
+                    placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="email" name="name" id="name" 
+                    placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number: </label>
+                    <input type="phone" name="name" id="name" 
+                    placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. ALL rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
